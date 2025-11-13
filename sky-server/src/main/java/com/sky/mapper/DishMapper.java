@@ -83,6 +83,12 @@ public interface DishMapper {
     List<Dish> getBySetmealId(Long setmealId);
 
     /**
+     * 根据菜品id集合批量删除菜品
+     * @param ids
+     */
+    void deleteByIds(List<Long> ids);
+
+    /**
      * 根据条件统计菜品数量
      * @param map
      * @return
